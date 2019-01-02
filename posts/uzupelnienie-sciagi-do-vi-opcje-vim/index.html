@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Adam Kubica (xcdr)">
+    <meta name="description" content="Adam Kubica (xcdr) personal website &amp;&amp; blog">
+    <meta name="keywords" content="administrator,developer,personal">
+
+    <base href="https://xcdr.kaizen-step.com/posts/uzupelnienie-sciagi-do-vi-opcje-vim/">
+    <title>
+  Uzupełnienie ściągi do Vi, opcje Vim · Kernel Panic
+</title>
+
+    <link rel="canonical" href="https://xcdr.kaizen-step.com/posts/uzupelnienie-sciagi-do-vi-opcje-vim/">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://xcdr.kaizen-step.com/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css" integrity="sha256-zQh6zoZ1Swgt7JRUVWf4Nhy6QuhPjhXtvEqfblK9H2o=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="https://xcdr.kaizen-step.com/css/custom.css">
+    
+
+    <link rel="icon" type="image/png" href="https://xcdr.kaizen-step.com/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://xcdr.kaizen-step.com/img/favicon-16x16.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.53" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://xcdr.kaizen-step.com/">
+      Kernel Panic
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://xcdr.kaizen-step.com/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://xcdr.kaizen-step.com/about/">O mnie</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Uzupełnienie ściągi do Vi, opcje Vim</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2002-04-15T11:07:47&#43;02:00'>
+                April 15, 2002
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              
+            </span>
+          </div>
+          
+          
+        </div>
+      </header>
+
+      <div>
+        <p>Edycja w wielu oknach:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">:all – otwiera nowe okno dla każdego pliku przekazanego w wierszu poleceń
+:split plik – otwiera plik do edycji ,lub pusty bufor
+:resize n – ustawia wielkość okna na n wierszy ,w przypadku nie podania n , ustawia maxymalną wielkość okna
+:resize +/- n – zwięsza/zmniejsza okno o podaną ilość wierszy
+:wa – zapisuje wszystkie bufory
+:wqa – zapisuje wszystkie bufory i konczy prace z edytorem
+CTRL+w v – dzieli ekran na kolumny
+CTRL+j/k (lub strzalki góra/dół) – przełączanie się miedzy oknami
+CTRL+w w – pozwala się przełączać pomiędzy oknami
+CTRL+w = – ustawia dla wszystkich okien jednakową wysokość</pre></div>
+<p>Tryb visual służy do wizualnego zaznaczania tekstu – czyli w praktyce zaznaczania z podświetleniem.</p>
+
+<p>Trybu visual można użyć na trzy sposoby:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">V – tryb zaznaczania po linii
+CTRL+v – tryb zaznaczania blokowego</pre></div>
+<p>Po wybraniu każdego z tych trybów, zaznaczamy tekst w taki sposób jak sie w nim poruszamy.
+W trybie wizualnym mamy kilka przydatnych opcji działających na zaznaczonym tekscie.</p>
+
+<p>Niektóre z nich to:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">u,U – zamiana na małe/wielkie litery
+~ – zamiana wielkości liter w tekscie z małych na duże i odwrotnie
+&lt;,&gt; – przesunięcie zaznaczonego tekstu w lewo, w prawo
+J – łaczenie podświetlonych wierszy</pre></div>
+<p>Działają również inne kombinacje, znane ze zwykłej edycji tekstu.</p>
+
+<p>Kilka opcji sterujących pracą edytora:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">:set wrap! – przełącza łamanie linii
+:set nu! – przełącza numerowanie linii
+:syntax on|off – włącza/wyłącza kolorowanie składni
+:set cindent! – włącza/wyłącza formatowanie wcięć dla języka C</pre></div>
+<p>Zamiana tekstu:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">:s/stary/nowy/ – zamiana pierwszego wystapienia tekstu „stary” na „nowy” w biezacej linii
+:s/stary/nowy/g – zamiana tekstu „stary” na „nowy” w biezacej linii
+:10,$s/stary/nowy/g – znieni tekst „stary” na „nowy” od 10 linii do konca pliku
+:%s/stary/nowy/g – zmieni tekst „stary” na „nowy” w całym pliku
+:%s/stary/nowy/gc – zmieni tekst „stary” na „nowy” w całym pliku pytając o podtwierdzenie</pre></div>
+<p>Czasami przydaje się skrót CTRL+L, dzięki któremu można odświerzyć ekran.</p>
+
+      </div>
+
+      <footer>
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+     © 2019
+    
+       · 
+      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Adam Kubica (xcdr)">
+    <meta name="description" content="Adam Kubica (xcdr) personal website &amp;&amp; blog">
+    <meta name="keywords" content="administrator,developer,personal">
+
+    <base href="https://xcdr.kaizen-step.com/posts/debian-zamiast-gentoo/">
+    <title>
+  Dlaczego wybrałem Debiana zamiast Gentoo · Kernel Panic
+</title>
+
+    <link rel="canonical" href="https://xcdr.kaizen-step.com/posts/debian-zamiast-gentoo/">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://xcdr.kaizen-step.com/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css" integrity="sha256-zQh6zoZ1Swgt7JRUVWf4Nhy6QuhPjhXtvEqfblK9H2o=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="https://xcdr.kaizen-step.com/css/custom.css">
+    
+
+    <link rel="icon" type="image/png" href="https://xcdr.kaizen-step.com/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://xcdr.kaizen-step.com/img/favicon-16x16.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.53" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://xcdr.kaizen-step.com/">
+      Kernel Panic
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://xcdr.kaizen-step.com/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://xcdr.kaizen-step.com/about/">O mnie</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Dlaczego wybrałem Debiana zamiast Gentoo</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2012-08-12T10:52:11&#43;02:00'>
+                August 12, 2012
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              
+            </span>
+          </div>
+          
+          
+        </div>
+      </header>
+
+      <div>
+        <p>Po latach administrowania Gentoo, uważam, że jest to świetna dystrybucja Linuksa, jego odpowiednik portów z FreeBSD - portage jest rewelacyjny, niewątpliwie jest to najlepsza dystrybucja jeśli potrzebujemy systemu, który trzeba skonfigurować i skompilować pod własne potrzeby. Wielką jej zaletą okazały się też skrypty startowe oraz pliki konfiguracyjne - są sensownie pomyślane i bardzo fajnie działają.</p>
+
+<p>Niestety Gentoo zbyt szybko się rozwija, niewątpliwie jest to duża zaleta, problem pojawia się jednak przy aktualizacjach, w praktyce powoduje to wiele problemów należy uważnie śledzić zmiany, testować aktualizacje - przynajmniej w teorii (w praktyce nie ma na to czasu), trzeba nadążyć z aktualizacją plików konfiguracyjnych, w których jest bardzo dużo zmian, kompilacje trwają wieki&hellip;</p>
+
+<p>Dystrybucja ta wymaga dużego nakładu pracy, czasu oraz uwagi, bardzo łatwo o problemy, szczególnie gdy mamy bardzo wiele serwerów w różnych konfiguracjach, w tym kontekście można porównać do brzytwy - jest ostra i dokładna ale łatwo się skaleczyć.</p>
+
+<p>Debian oferuje nieporównywalną przewidywalność i stabilność przy czym sprawia o wiele mniej problemów, aktualizacje przebiegają szybciej (często o kilka godzin) i sprawniej. W praktyce okazało się, że możliwości Gentoo nie są tak bardzo potrzebne, a ważniejsza jest stabilność i jakość rozwiązań oraz ilość czasu jaką należy poświęcić na utrzymanie systemu - czas jest bezcenny.</p>
+
+<p>Można powiedzieć, że Debian to taki dopracowany samochód produkcji niemieckiej z turbodoładowanym silnikiem diesla - nie sprawia problemów, całkiem szybko i pewnie dojedzie do celu, a Gentoo to taki samochód sportowy wytwarzany na zamówienie dla zapaleńców - niby szybszy i nowocześniejszy ale co chwilę wymaga serwisu.</p>
+
+<p>Reasumując, wybrałem Debiana dlatego że mając pod opieką dużą ilość serwerów, jestem w stanie się skupić na rozwiązywaniu realnych problemów i dostarczaniu stabilnych rozwiązań, a przy przy administrowaniu Gentoo zawsze tego czasu więcej schodziło niż powinno.</p>
+
+<p>Powyższe przemyślenia nie są kompletne, przyczyn decyzji o zmianie dystrybucji było wiele, jednak wszystkie miały wspólny mianownik - zmiana mojej mentalności, może również dostrzeżenie istoty rozwiązań IT&hellip;</p>
+
+      </div>
+
+      <footer>
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+     © 2019
+    
+       · 
+      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>

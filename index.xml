@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kernel Panic</title>
+    <link>https://xcdr.kaizen-step.com/</link>
+    <description>Recent content on Kernel Panic</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pl</language>
+    <lastBuildDate>Sun, 24 Jun 2018 10:32:05 +0200</lastBuildDate>
+    
+	<atom:link href="https://xcdr.kaizen-step.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>O mnie</title>
+      <link>https://xcdr.kaizen-step.com/about/</link>
+      <pubDate>Sun, 24 Jun 2018 10:32:05 +0200</pubDate>
+      
+      <guid>https://xcdr.kaizen-step.com/about/</guid>
+      <description>Urodziłem się w roku 1979, swój pierwszy program napisałem za czasów Commodore 64, a pierwszy działający serwer uruchomiłem na RedHat 5.1. IT zajmuje się zawodowo od 2002 roku jako programista i administrator, w sieci najczęściej posługuję się nickiem &amp;ldquo;xcdr&amp;rdquo;.
+Jak wielu staram się łączyć pracę zawodową oraz moje pasje z życiem rodzinnym.</description>
+    </item>
+    
+    <item>
+      <title>Debian Wheezy NFS &#43; Firewall</title>
+      <link>https://xcdr.kaizen-step.com/posts/debian-wheezy-nfs&#43;firewall/</link>
+      <pubDate>Thu, 12 Dec 2013 11:11:30 +0200</pubDate>
+      
+      <guid>https://xcdr.kaizen-step.com/posts/debian-wheezy-nfs&#43;firewall/</guid>
+      <description>Często zachodzi konieczność uruchomienia serwera NFS w połączeniu z firewallem (iptables), niestety zadanie to ze względu na zasadę działania NFS jest troszkę problematyczne.
+Przygotowałem krótka ściągę w oparciu o Debiana Wheezy, która powinna pozwolić uruchomić taką konfigurację szybko i bez czasochłonnego czytania dokumentacji.
+Zakładam, że nie uwzlędniamy wykorzystywania quoty, a iptables jest już poprawnie skonfigurowane i blokuje połączenia przychodzące, natomiast nie blokuje połączeń nawiązanych oraz wychodzących.
+Instalujemy potrzebne paczki:
+apt-get install nfs-kernel-server W pliku /etc/modprobe.</description>
+    </item>
+    
+    <item>
+      <title>Dlaczego wybrałem Debiana zamiast Gentoo</title>
+      <link>https://xcdr.kaizen-step.com/posts/debian-zamiast-gentoo/</link>
+      <pubDate>Sun, 12 Aug 2012 10:52:11 +0200</pubDate>
+      
+      <guid>https://xcdr.kaizen-step.com/posts/debian-zamiast-gentoo/</guid>
+      <description>Po latach administrowania Gentoo, uważam, że jest to świetna dystrybucja Linuksa, jego odpowiednik portów z FreeBSD - portage jest rewelacyjny, niewątpliwie jest to najlepsza dystrybucja jeśli potrzebujemy systemu, który trzeba skonfigurować i skompilować pod własne potrzeby. Wielką jej zaletą okazały się też skrypty startowe oraz pliki konfiguracyjne - są sensownie pomyślane i bardzo fajnie działają.
+Niestety Gentoo zbyt szybko się rozwija, niewątpliwie jest to duża zaleta, problem pojawia się jednak przy aktualizacjach, w praktyce powoduje to wiele problemów należy uważnie śledzić zmiany, testować aktualizacje - przynajmniej w teorii (w praktyce nie ma na to czasu), trzeba nadążyć z aktualizacją plików konfiguracyjnych, w których jest bardzo dużo zmian, kompilacje trwają wieki&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Uzupełnienie ściągi do Vi, opcje Vim</title>
+      <link>https://xcdr.kaizen-step.com/posts/uzupelnienie-sciagi-do-vi-opcje-vim/</link>
+      <pubDate>Mon, 15 Apr 2002 11:07:47 +0200</pubDate>
+      
+      <guid>https://xcdr.kaizen-step.com/posts/uzupelnienie-sciagi-do-vi-opcje-vim/</guid>
+      <description>Edycja w wielu oknach:
+:all – otwiera nowe okno dla każdego pliku przekazanego w wierszu poleceń :split plik – otwiera plik do edycji ,lub pusty bufor :resize n – ustawia wielkość okna na n wierszy ,w przypadku nie podania n , ustawia maxymalną wielkość okna :resize +/- n – zwięsza/zmniejsza okno o podaną ilość wierszy :wa – zapisuje wszystkie bufory :wqa – zapisuje wszystkie bufory i konczy prace z edytorem CTRL+w v – dzieli ekran na kolumny CTRL+j/k (lub strzalki góra/dół) – przełączanie się miedzy oknami CTRL+w w – pozwala się przełączać pomiędzy oknami CTRL+w = – ustawia dla wszystkich okien jednakową wysokość Tryb visual służy do wizualnego zaznaczania tekstu – czyli w praktyce zaznaczania z podświetleniem.</description>
+    </item>
+    
+    <item>
+      <title>Krótka ściąga do Vi</title>
+      <link>https://xcdr.kaizen-step.com/posts/krotka-sciaga-do-vi/</link>
+      <pubDate>Thu, 28 Sep 2000 11:03:26 +0200</pubDate>
+      
+      <guid>https://xcdr.kaizen-step.com/posts/krotka-sciaga-do-vi/</guid>
+      <description>Tryb wprowadzania poleceń:
+:q – opuszczenie edytora :q! – bezwarunkowe opuszczenie edytora :x, :x plik – wyjcie z edytora i zapis ,wyjcie z edytora i zapis do innego pliku :w, :w plik – zapis dokumentu ,zapis dokumentu do innego pliku :e – otwarcie pliku do edycji :e! – pominiecie wszystkich zmian od ostaniego zapisu do pliku :help – wywołanie menu pomocy edytora Poruszanie się po tekscie:
+h, nh – w lewo ,w lewo o ‚n’ wierszy k, nk – w gór ,w górę o ‚n’ wierszy j, nj – w dół ,w dół o ‚n’ wierszy l, nl – w prawo ,w prawo o ‚n’ znaków 0 – przejcie na początek wiersza $ – przejcie na koniec wiersza Ctrl+w – 1/2 ekranu w górę Ctrl+d – 1/2 ekranu w dół Ctrl+B – cały ekran w górę Ctrl+F – cały ekran w dół nG – idź na wiersz o numerze ‚n’ ($G – ostatni wiersz) Tryb edycji:</description>
+    </item>
+    
+    <item>
+      <title>Atrybuty Plików w Linuxie</title>
+      <link>https://xcdr.kaizen-step.com/posts/atrybuty-plikow-w-linuxie/</link>
+      <pubDate>Thu, 28 Sep 2000 11:00:26 +0200</pubDate>
+      
+      <guid>https://xcdr.kaizen-step.com/posts/atrybuty-plikow-w-linuxie/</guid>
+      <description>W systemie linux istnieje rozbudowany system praw oraz atrybutów plików. Ten dokument ma na celu przybliżenie sposobu manipulowania prawami i atrybutami plików przy użyciu podstawowych narzedzi udostępnianych przez linuxa. Użytkownik może zmieniać prawa tylko dla tych plików których jest właścicielem. Jedynie administrator systemu ‚root’ ma prawo swobodnego manipulowania plikami.
+Komenda ‚ls -l’ wyświetla liste plików oraz prawa które do nich przysługują.
+Prawa do plików obowiązują dla :
+„u” – właściciela pliku „g” – grupy do której należy właściciel „o” – pozostałych użytkowników Do zmiany praw słuzy systemowa komenda ‚chmod’ (przydatna jest opcja ‚chmod -R’ ,która zmienia prawa rekursywnie.</description>
+    </item>
+    
+  </channel>
+</rss>
