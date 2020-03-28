@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Kernel Panic</title>
@@ -41,7 +41,7 @@ Niestety Gentoo zbyt szybko się rozwija, niewątpliwie jest to duża zaleta, pr
       
       <guid>https://xcdr.kaizen-step.com/posts/uzupelnienie-sciagi-do-vi-opcje-vim/</guid>
       <description>Edycja w wielu oknach:
-:all – otwiera nowe okno dla każdego pliku przekazanego w wierszu poleceń :split plik – otwiera plik do edycji ,lub pusty bufor :resize n – ustawia wielkość okna na n wierszy ,w przypadku nie podania n , ustawia maxymalną wielkość okna :resize +/- n – zwięsza/zmniejsza okno o podaną ilość wierszy :wa – zapisuje wszystkie bufory :wqa – zapisuje wszystkie bufory i konczy prace z edytorem CTRL+w v – dzieli ekran na kolumny CTRL+j/k (lub strzalki góra/dół) – przełączanie się miedzy oknami CTRL+w w – pozwala się przełączać pomiędzy oknami CTRL+w = – ustawia dla wszystkich okien jednakową wysokość Tryb visual służy do wizualnego zaznaczania tekstu – czyli w praktyce zaznaczania z podświetleniem.</description>
+:all – otwiera nowe okno dla każdego pliku przekazanego w wierszu poleceń :split plik – otwiera plik do edycji, lub pusty bufor :resize n – ustawia wielkość okna na n wierszy ,w przypadku nie podania n, ustawia maxymalną wielkość okna :resize +/- n – zwięsza/zmniejsza okno o podaną ilość wierszy :wa – zapisuje wszystkie bufory :wqa – zapisuje wszystkie bufory i konczy prace z edytorem CTRL+w v – dzieli ekran na kolumny CTRL+j/k (lub strzalki góra/dół) – przełączanie się miedzy oknami CTRL+w w – pozwala się przełączać pomiędzy oknami CTRL+w = – ustawia dla wszystkich okien jednakową wysokość Tryb visual służy do wizualnego zaznaczania tekstu – czyli w praktyce zaznaczania z podświetleniem.</description>
     </item>
     
     <item>
@@ -51,8 +51,8 @@ Niestety Gentoo zbyt szybko się rozwija, niewątpliwie jest to duża zaleta, pr
       
       <guid>https://xcdr.kaizen-step.com/posts/krotka-sciaga-do-vi/</guid>
       <description>Tryb wprowadzania poleceń:
-:q – opuszczenie edytora :q! – bezwarunkowe opuszczenie edytora :x, :x plik – wyjcie z edytora i zapis ,wyjcie z edytora i zapis do innego pliku :w, :w plik – zapis dokumentu ,zapis dokumentu do innego pliku :e – otwarcie pliku do edycji :e! – pominiecie wszystkich zmian od ostaniego zapisu do pliku :help – wywołanie menu pomocy edytora Poruszanie się po tekscie:
-h, nh – w lewo ,w lewo o ‚n’ wierszy k, nk – w gór ,w górę o ‚n’ wierszy j, nj – w dół ,w dół o ‚n’ wierszy l, nl – w prawo ,w prawo o ‚n’ znaków 0 – przejcie na początek wiersza $ – przejcie na koniec wiersza Ctrl+w – 1/2 ekranu w górę Ctrl+d – 1/2 ekranu w dół Ctrl+B – cały ekran w górę Ctrl+F – cały ekran w dół nG – idź na wiersz o numerze ‚n’ ($G – ostatni wiersz) Tryb edycji:</description>
+:q – opuszczenie edytora :q! – bezwarunkowe opuszczenie edytora :x, :x plik – wyjcie z edytora i zapis, wyśjcie z edytora i zapis do innego pliku :w, :w plik – zapis dokumentu, zapis dokumentu do innego pliku :e – otwarcie pliku do edycji :e! – pominiecie wszystkich zmian od ostaniego zapisu do pliku :help – wywołanie menu pomocy edytora Poruszanie się po tekscie:
+h, nh – w lewo, w lewo o &amp;#34;n&amp;#34; wierszy k, nk – w gór, w górę o &amp;#34;n&amp;#34; wierszy j, nj – w dół, w dół o &amp;#34;n&amp;#34; wierszy l, nl – w prawo, w prawo o &amp;#34;n&amp;#34; znaków 0 – przejcie na początek wiersza $ – przejcie na koniec wiersza Ctrl+w – 1/2 ekranu w górę Ctrl+d – 1/2 ekranu w dół Ctrl+B – cały ekran w górę Ctrl+F – cały ekran w dół nG – idź na wiersz o numerze &amp;#34;n&amp;#34; ($G – ostatni wiersz) Tryb edycji:</description>
     </item>
     
     <item>
@@ -61,10 +61,10 @@ h, nh – w lewo ,w lewo o ‚n’ wierszy k, nk – w gór ,w górę o ‚n’ 
       <pubDate>Thu, 28 Sep 2000 11:00:26 +0200</pubDate>
       
       <guid>https://xcdr.kaizen-step.com/posts/atrybuty-plikow-w-linuxie/</guid>
-      <description>W systemie linux istnieje rozbudowany system praw oraz atrybutów plików. Ten dokument ma na celu przybliżenie sposobu manipulowania prawami i atrybutami plików przy użyciu podstawowych narzedzi udostępnianych przez linuxa. Użytkownik może zmieniać prawa tylko dla tych plików których jest właścicielem. Jedynie administrator systemu ‚root’ ma prawo swobodnego manipulowania plikami.
-Komenda ‚ls -l’ wyświetla liste plików oraz prawa które do nich przysługują.
-Prawa do plików obowiązują dla :
-„u” – właściciela pliku „g” – grupy do której należy właściciel „o” – pozostałych użytkowników Do zmiany praw słuzy systemowa komenda ‚chmod’ (przydatna jest opcja ‚chmod -R’ ,która zmienia prawa rekursywnie.</description>
+      <description>W systemie linux istnieje rozbudowany system praw oraz atrybutów plików. Ten tekst ma na celu przybliżenie sposobu manipulowania uprawnieniami i atrybutami plików przy użyciu podstawowych narzędzi udostępnianych przez linuxa. Użytkownik może zmieniać uprawnienia tylko dla tych plików których jest właścicielem. Jedynie administrator systemu &amp;ldquo;root&amp;rdquo; ma prawo swobodnego manipulowania plikami.
+Komenda ls -l wyświetla liste plików oraz uprawnienia które do nich przysługują.
+Prawa do plików obowiązują dla:
+&amp;#39;u&amp;#39; – właściciela pliku &amp;#39;g&amp;#39; – grupy do której należy właściciel &amp;#39;o&amp;#39; – pozostałych użytkowników Do zmiany praw słuzy systemowa komenda chmod (przydatna jest opcja chmod -R, która zmienia uprawnienia rekursywnie.</description>
     </item>
     
   </channel>

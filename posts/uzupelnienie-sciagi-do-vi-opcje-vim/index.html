@@ -9,21 +9,39 @@
     <meta name="description" content="Adam Kubica (xcdr) personal website &amp;&amp; blog">
     <meta name="keywords" content="administrator,developer,personal">
 
-    <base href="https://xcdr.kaizen-step.com/posts/uzupelnienie-sciagi-do-vi-opcje-vim/">
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Uzupełnienie ściągi do Vi, opcje Vim"/>
+<meta name="twitter:description" content="Edycja w wielu oknach:
+:all – otwiera nowe okno dla każdego pliku przekazanego w wierszu poleceń :split plik – otwiera plik do edycji, lub pusty bufor :resize n – ustawia wielkość okna na n wierszy ,w przypadku nie podania n, ustawia maxymalną wielkość okna :resize &#43;/- n – zwięsza/zmniejsza okno o podaną ilość wierszy :wa – zapisuje wszystkie bufory :wqa – zapisuje wszystkie bufory i konczy prace z edytorem CTRL&#43;w v – dzieli ekran na kolumny CTRL&#43;j/k (lub strzalki góra/dół) – przełączanie się miedzy oknami CTRL&#43;w w – pozwala się przełączać pomiędzy oknami CTRL&#43;w = – ustawia dla wszystkich okien jednakową wysokość Tryb visual służy do wizualnego zaznaczania tekstu – czyli w praktyce zaznaczania z podświetleniem."/>
+
+    <meta property="og:title" content="Uzupełnienie ściągi do Vi, opcje Vim" />
+<meta property="og:description" content="Edycja w wielu oknach:
+:all – otwiera nowe okno dla każdego pliku przekazanego w wierszu poleceń :split plik – otwiera plik do edycji, lub pusty bufor :resize n – ustawia wielkość okna na n wierszy ,w przypadku nie podania n, ustawia maxymalną wielkość okna :resize &#43;/- n – zwięsza/zmniejsza okno o podaną ilość wierszy :wa – zapisuje wszystkie bufory :wqa – zapisuje wszystkie bufory i konczy prace z edytorem CTRL&#43;w v – dzieli ekran na kolumny CTRL&#43;j/k (lub strzalki góra/dół) – przełączanie się miedzy oknami CTRL&#43;w w – pozwala się przełączać pomiędzy oknami CTRL&#43;w = – ustawia dla wszystkich okien jednakową wysokość Tryb visual służy do wizualnego zaznaczania tekstu – czyli w praktyce zaznaczania z podświetleniem." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xcdr.kaizen-step.com/posts/uzupelnienie-sciagi-do-vi-opcje-vim/" />
+<meta property="article:published_time" content="2002-04-15T11:07:47+02:00" />
+<meta property="article:modified_time" content="2002-04-15T11:07:47+02:00" />
+
+
+    
+      <base href="https://xcdr.kaizen-step.com/posts/uzupelnienie-sciagi-do-vi-opcje-vim/">
+    
     <title>
   Uzupełnienie ściągi do Vi, opcje Vim · Kernel Panic
 </title>
 
-    <link rel="canonical" href="https://xcdr.kaizen-step.com/posts/uzupelnienie-sciagi-do-vi-opcje-vim/">
+    
+      <link rel="canonical" href="https://xcdr.kaizen-step.com/posts/uzupelnienie-sciagi-do-vi-opcje-vim/">
+    
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
 
     
       
       
-      <link rel="stylesheet" href="https://xcdr.kaizen-step.com/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css" integrity="sha256-zQh6zoZ1Swgt7JRUVWf4Nhy6QuhPjhXtvEqfblK9H2o=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="https://xcdr.kaizen-step.com/css/coder.min.a4f332213a21ce8eb521670c614470c58923aaaf385e2a73982c31dd7642decb.css" integrity="sha256-pPMyITohzo61IWcMYURwxYkjqq84XipzmCwx3XZC3ss=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -31,24 +49,29 @@
     
 
     
-      <link rel="stylesheet" href="https://xcdr.kaizen-step.com/css/custom.css">
+      <link rel="stylesheet" href="https://xcdr.kaizen-step.com/css/custom.css" />
+    
+
+    
+
     
 
     <link rel="icon" type="image/png" href="https://xcdr.kaizen-step.com/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://xcdr.kaizen-step.com/img/favicon-16x16.png" sizes="16x16">
 
-    
-
-    <meta name="generator" content="Hugo 0.53" />
+    <meta name="generator" content="Hugo 0.68.3" />
   </head>
 
-  <body class=" ">
+  
+  
+  <body class="colorscheme-light">
     <main class="wrapper">
       <nav class="navigation">
   <section class="container">
     <a class="navigation-title" href="https://xcdr.kaizen-step.com/">
       Kernel Panic
     </a>
+    
     <input type="checkbox" id="menu-toggle" />
     <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
     <ul class="navigation-list">
@@ -65,6 +88,7 @@
       
       
     </ul>
+    
   </section>
 </nav>
 
@@ -87,7 +111,7 @@
             </span>
             <span class="reading-time">
               <i class="fas fa-clock"></i>
-              
+              czas czytania: 2 min
             </span>
           </div>
           
@@ -96,53 +120,73 @@
       </header>
 
       <div>
+        
         <p>Edycja w wielu oknach:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">:all – otwiera nowe okno dla każdego pliku przekazanego w wierszu poleceń
-:split plik – otwiera plik do edycji ,lub pusty bufor
-:resize n – ustawia wielkość okna na n wierszy ,w przypadku nie podania n , ustawia maxymalną wielkość okna
-:resize +/- n – zwięsza/zmniejsza okno o podaną ilość wierszy
-:wa – zapisuje wszystkie bufory
-:wqa – zapisuje wszystkie bufory i konczy prace z edytorem
-CTRL+w v – dzieli ekran na kolumny
-CTRL+j/k (lub strzalki góra/dół) – przełączanie się miedzy oknami
-CTRL+w w – pozwala się przełączać pomiędzy oknami
-CTRL+w = – ustawia dla wszystkich okien jednakową wysokość</pre></div>
-<p>Tryb visual służy do wizualnego zaznaczania tekstu – czyli w praktyce zaznaczania z podświetleniem.</p>
-
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">    :all – otwiera nowe okno dla każdego pliku przekazanego w wierszu poleceń
+    :split plik – otwiera plik do edycji, lub pusty bufor
+    :resize n – ustawia wielkość okna na n wierszy ,w przypadku nie podania n, ustawia maxymalną wielkość okna
+    :resize +/- n – zwięsza/zmniejsza okno o podaną ilość wierszy
+    :wa – zapisuje wszystkie bufory
+    :wqa – zapisuje wszystkie bufory i konczy prace z edytorem
+    CTRL+w v – dzieli ekran na kolumny
+    CTRL+j/k (lub strzalki góra/dół) – przełączanie się miedzy oknami
+    CTRL+w w – pozwala się przełączać pomiędzy oknami
+    CTRL+w = – ustawia dla wszystkich okien jednakową wysokość
+</code></pre></div><p>Tryb visual służy do wizualnego zaznaczania tekstu – czyli w praktyce zaznaczania z podświetleniem.</p>
 <p>Trybu visual można użyć na trzy sposoby:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">V – tryb zaznaczania po linii
-CTRL+v – tryb zaznaczania blokowego</pre></div>
-<p>Po wybraniu każdego z tych trybów, zaznaczamy tekst w taki sposób jak sie w nim poruszamy.
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">    V – tryb zaznaczania po linii
+    CTRL+v – tryb zaznaczania blokowego
+</code></pre></div><p>Po wybraniu każdego z tych trybów, zaznaczamy tekst w taki sposób jak sie w nim poruszamy.
 W trybie wizualnym mamy kilka przydatnych opcji działających na zaznaczonym tekscie.</p>
-
 <p>Niektóre z nich to:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">u,U – zamiana na małe/wielkie litery
-~ – zamiana wielkości liter w tekscie z małych na duże i odwrotnie
-&lt;,&gt; – przesunięcie zaznaczonego tekstu w lewo, w prawo
-J – łaczenie podświetlonych wierszy</pre></div>
-<p>Działają również inne kombinacje, znane ze zwykłej edycji tekstu.</p>
-
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">    u,U – zamiana na małe/wielkie litery
+    ~ – zamiana wielkości liter w tekscie z małych na duże i odwrotnie
+    &lt;,&gt; – przesunięcie zaznaczonego tekstu w lewo, w prawo
+    J – łaczenie podświetlonych wierszy
+</code></pre></div><p>Działają również inne kombinacje, znane ze zwykłej edycji tekstu.</p>
 <p>Kilka opcji sterujących pracą edytora:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">:set wrap! – przełącza łamanie linii
-:set nu! – przełącza numerowanie linii
-:syntax on|off – włącza/wyłącza kolorowanie składni
-:set cindent! – włącza/wyłącza formatowanie wcięć dla języka C</pre></div>
-<p>Zamiana tekstu:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">:s/stary/nowy/ – zamiana pierwszego wystapienia tekstu „stary” na „nowy” w biezacej linii
-:s/stary/nowy/g – zamiana tekstu „stary” na „nowy” w biezacej linii
-:10,$s/stary/nowy/g – znieni tekst „stary” na „nowy” od 10 linii do konca pliku
-:%s/stary/nowy/g – zmieni tekst „stary” na „nowy” w całym pliku
-:%s/stary/nowy/gc – zmieni tekst „stary” na „nowy” w całym pliku pytając o podtwierdzenie</pre></div>
-<p>Czasami przydaje się skrót CTRL+L, dzięki któremu można odświerzyć ekran.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">    :set wrap! – przełącza łamanie linii
+    :set nu! – przełącza numerowanie linii
+    :syntax on|off – włącza/wyłącza kolorowanie składni
+    :set cindent! – włącza/wyłącza formatowanie wcięć dla języka C
+</code></pre></div><p>Zamiana tekstu:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">    :s/stary/nowy/ – zamiana pierwszego wystapienia tekstu &#34;stary&#34; na &#34;nowy&#34; w biezacej linii
+    :s/stary/nowy/g – zamiana tekstu &#34;stary&#34; na &#34;nowy&#34; w biezacej linii
+    :10,$s/stary/nowy/g – znieni tekst &#34;stary&#34; na &#34;nowy&#34; od 10 linii do konca pliku
+    :%s/stary/nowy/g – zmieni tekst &#34;stary&#34; na &#34;nowy&#34; w całym pliku
+    :%s/stary/nowy/gc – zmieni tekst &#34;stary&#34; na &#34;nowy&#34; w całym pliku pytając o podtwierdzenie
+</code></pre></div><p>Czasami przydaje się skrót CTRL+L, dzięki któremu można odświerzyć ekran.</p>
 
       </div>
 
+
       <footer>
+        
+
+
+        
+        
         
       </footer>
     </article>
 
-    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
   </section>
 
       </div>
@@ -150,16 +194,23 @@ J – łaczenie podświetlonych wierszy</pre></div>
       <footer class="footer">
   <section class="container">
     
-     © 2019
+    
+      
+        © 2020
+      
+       Adam Kubica (xcdr) 
+    
     
        · 
-      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      Napędzane przez <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
     
     
   </section>
 </footer>
 
     </main>
+
+    
 
     
 

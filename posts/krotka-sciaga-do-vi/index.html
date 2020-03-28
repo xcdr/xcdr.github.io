@@ -9,21 +9,41 @@
     <meta name="description" content="Adam Kubica (xcdr) personal website &amp;&amp; blog">
     <meta name="keywords" content="administrator,developer,personal">
 
-    <base href="https://xcdr.kaizen-step.com/posts/krotka-sciaga-do-vi/">
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Krótka ściąga do Vi"/>
+<meta name="twitter:description" content="Tryb wprowadzania poleceń:
+:q – opuszczenie edytora :q! – bezwarunkowe opuszczenie edytora :x, :x plik – wyjcie z edytora i zapis, wyśjcie z edytora i zapis do innego pliku :w, :w plik – zapis dokumentu, zapis dokumentu do innego pliku :e – otwarcie pliku do edycji :e! – pominiecie wszystkich zmian od ostaniego zapisu do pliku :help – wywołanie menu pomocy edytora Poruszanie się po tekscie:
+h, nh – w lewo, w lewo o &#34;n&#34; wierszy k, nk – w gór, w górę o &#34;n&#34; wierszy j, nj – w dół, w dół o &#34;n&#34; wierszy l, nl – w prawo, w prawo o &#34;n&#34; znaków 0 – przejcie na początek wiersza $ – przejcie na koniec wiersza Ctrl&#43;w – 1/2 ekranu w górę Ctrl&#43;d – 1/2 ekranu w dół Ctrl&#43;B – cały ekran w górę Ctrl&#43;F – cały ekran w dół nG – idź na wiersz o numerze &#34;n&#34; ($G – ostatni wiersz) Tryb edycji:"/>
+
+    <meta property="og:title" content="Krótka ściąga do Vi" />
+<meta property="og:description" content="Tryb wprowadzania poleceń:
+:q – opuszczenie edytora :q! – bezwarunkowe opuszczenie edytora :x, :x plik – wyjcie z edytora i zapis, wyśjcie z edytora i zapis do innego pliku :w, :w plik – zapis dokumentu, zapis dokumentu do innego pliku :e – otwarcie pliku do edycji :e! – pominiecie wszystkich zmian od ostaniego zapisu do pliku :help – wywołanie menu pomocy edytora Poruszanie się po tekscie:
+h, nh – w lewo, w lewo o &#34;n&#34; wierszy k, nk – w gór, w górę o &#34;n&#34; wierszy j, nj – w dół, w dół o &#34;n&#34; wierszy l, nl – w prawo, w prawo o &#34;n&#34; znaków 0 – przejcie na początek wiersza $ – przejcie na koniec wiersza Ctrl&#43;w – 1/2 ekranu w górę Ctrl&#43;d – 1/2 ekranu w dół Ctrl&#43;B – cały ekran w górę Ctrl&#43;F – cały ekran w dół nG – idź na wiersz o numerze &#34;n&#34; ($G – ostatni wiersz) Tryb edycji:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xcdr.kaizen-step.com/posts/krotka-sciaga-do-vi/" />
+<meta property="article:published_time" content="2000-09-28T11:03:26+02:00" />
+<meta property="article:modified_time" content="2000-09-28T11:03:26+02:00" />
+
+
+    
+      <base href="https://xcdr.kaizen-step.com/posts/krotka-sciaga-do-vi/">
+    
     <title>
   Krótka ściąga do Vi · Kernel Panic
 </title>
 
-    <link rel="canonical" href="https://xcdr.kaizen-step.com/posts/krotka-sciaga-do-vi/">
+    
+      <link rel="canonical" href="https://xcdr.kaizen-step.com/posts/krotka-sciaga-do-vi/">
+    
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
 
     
       
       
-      <link rel="stylesheet" href="https://xcdr.kaizen-step.com/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css" integrity="sha256-zQh6zoZ1Swgt7JRUVWf4Nhy6QuhPjhXtvEqfblK9H2o=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="https://xcdr.kaizen-step.com/css/coder.min.a4f332213a21ce8eb521670c614470c58923aaaf385e2a73982c31dd7642decb.css" integrity="sha256-pPMyITohzo61IWcMYURwxYkjqq84XipzmCwx3XZC3ss=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -31,24 +51,29 @@
     
 
     
-      <link rel="stylesheet" href="https://xcdr.kaizen-step.com/css/custom.css">
+      <link rel="stylesheet" href="https://xcdr.kaizen-step.com/css/custom.css" />
+    
+
+    
+
     
 
     <link rel="icon" type="image/png" href="https://xcdr.kaizen-step.com/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://xcdr.kaizen-step.com/img/favicon-16x16.png" sizes="16x16">
 
-    
-
-    <meta name="generator" content="Hugo 0.53" />
+    <meta name="generator" content="Hugo 0.68.3" />
   </head>
 
-  <body class=" ">
+  
+  
+  <body class="colorscheme-light">
     <main class="wrapper">
       <nav class="navigation">
   <section class="container">
     <a class="navigation-title" href="https://xcdr.kaizen-step.com/">
       Kernel Panic
     </a>
+    
     <input type="checkbox" id="menu-toggle" />
     <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
     <ul class="navigation-list">
@@ -65,6 +90,7 @@
       
       
     </ul>
+    
   </section>
 </nav>
 
@@ -87,7 +113,7 @@
             </span>
             <span class="reading-time">
               <i class="fas fa-clock"></i>
-              
+              czas czytania: 2 min
             </span>
           </div>
           
@@ -96,57 +122,81 @@
       </header>
 
       <div>
+        
         <p>Tryb wprowadzania poleceń:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">:q – opuszczenie edytora
-:q! – bezwarunkowe opuszczenie edytora
-:x, :x plik – wyjcie z edytora i zapis ,wyjcie z edytora i zapis do innego pliku
-:w, :w plik – zapis dokumentu ,zapis dokumentu do innego pliku
-:e – otwarcie pliku do edycji
-:e! – pominiecie wszystkich zmian od ostaniego zapisu do pliku
-:help – wywołanie menu pomocy edytora</pre></div>
-<p>Poruszanie się po tekscie:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">h, nh – w lewo ,w lewo o ‚n’ wierszy
-k, nk – w gór ,w górę o ‚n’ wierszy
-j, nj – w dół ,w dół o ‚n’ wierszy
-l, nl – w prawo ,w prawo o ‚n’ znaków
-0 – przejcie na początek wiersza
-$ – przejcie na koniec wiersza
-Ctrl+w – 1/2 ekranu w górę
-Ctrl+d – 1/2 ekranu w dół
-Ctrl+B – cały ekran w górę
-Ctrl+F – cały ekran w dół
-nG – idź na wiersz o numerze ‚n’ ($G – ostatni wiersz)</pre></div>
-<p>Tryb edycji:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">. – powtarza ostatnią operację
-u – anulowanie ostatniej operacji
-i, a – wstawianie znaków przed ,za kursorem
-I, A – wstawianie znaków na początku ,na końcu wiersza
-0, O – wstawianie nowej linijki za ,przed kursorem
-R – nadpisywanie tekstu
-x,X – kasuje bieżący znak ,znak przed kursorem
-dw, ndw – kasuje słowo za kursorem ,’n’ słów
-db, ndb – kasuje słowo przed kursorem ,’n’ słów
-dd, ndd – kasuje cały wiersz ,’n’ wierszy
-D, d$ – kasuje wszystko od kursora do końca wiersza
-d0 – kasuje wszystko od kursora do początku wiersza
-r – zamiana bieżącego znaku na inny
-yy, nyy – kopiowanie wiersza ,kopiowanie ‚n’ wierszy
-y0 – kopiowanie od początku wiersza do bieżącej pozycji kursora
-y$ – kopiowanie od bieżącej pozycji kursora do koncza wiersza
-p, P – wklejanie tekstu przed ,za aktualnym wierszem
-f, F – wyszukiwanie znaku w od bieżącej pozycji kursora do końca ,początku wiersza
-; – wyszukiwanie następnych takich samych znaków w wierszu
-/ – wyszukiwanie wyrazu o podanym wzorcu od początku pliku
-? – wyszukiwanie wyrazu o podanym wzorcu od konca pliku
-n – wyszukiwanie następnych takich samych wyrazów w pliku</pre></div>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">    :q – opuszczenie edytora
+    :q! – bezwarunkowe opuszczenie edytora
+    :x, :x plik – wyjcie z edytora i zapis, wyśjcie z edytora i zapis do innego pliku
+    :w, :w plik – zapis dokumentu, zapis dokumentu do innego pliku
+    :e – otwarcie pliku do edycji
+    :e! – pominiecie wszystkich zmian od ostaniego zapisu do pliku
+    :help – wywołanie menu pomocy edytora
+</code></pre></div><p>Poruszanie się po tekscie:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">    h, nh – w lewo, w lewo o &#34;n&#34; wierszy
+    k, nk – w gór, w górę o &#34;n&#34; wierszy
+    j, nj – w dół, w dół o &#34;n&#34; wierszy
+    l, nl – w prawo, w prawo o &#34;n&#34; znaków
+    0 – przejcie na początek wiersza
+    $ – przejcie na koniec wiersza
+    Ctrl+w – 1/2 ekranu w górę
+    Ctrl+d – 1/2 ekranu w dół
+    Ctrl+B – cały ekran w górę
+    Ctrl+F – cały ekran w dół
+    nG – idź na wiersz o numerze &#34;n&#34; ($G – ostatni wiersz)
+</code></pre></div><p>Tryb edycji:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">    . – powtarza ostatnią operację
+    u – anulowanie ostatniej operacji
+    i, a – wstawianie znaków przed, za kursorem
+    I, A – wstawianie znaków na początku, na końcu wiersza
+    o, O – wstawianie nowej linijki za, przed kursorem
+    R – nadpisywanie tekstu
+    x,X – kasuje bieżący znak, znak przed kursorem
+    dw, ndw – kasuje słowo za kursorem, &#34;n&#34; słów
+    db, ndb – kasuje słowo przed kursorem, &#34;n&#34; słów
+    dd, ndd – kasuje cały wiersz, &#34;n&#34; wierszy
+    D, d$ – kasuje wszystko od kursora do końca wiersza
+    d0 – kasuje wszystko od kursora do początku wiersza
+    r – zamiana bieżącego znaku na inny
+    yy, nyy – kopiowanie wiersza &#34;kopiowanie, n&#34; wierszy
+    y0 – kopiowanie od początku wiersza do bieżącej pozycji kursora
+    y$ – kopiowanie od bieżącej pozycji kursora do koncza wiersza
+    p, P – wklejanie tekstu przed, za aktualnym wierszem
+    f, F – wyszukiwanie znaku w od bieżącej pozycji kursora do końca, początku wiersza
+    ; – wyszukiwanie następnych takich samych znaków w wierszu
+    / – wyszukiwanie wyrazu o podanym wzorcu od początku pliku
+    ? – wyszukiwanie wyrazu o podanym wzorcu od konca pliku
+    n – wyszukiwanie następnych takich samych wyrazów w pliku
+</code></pre></div>
       </div>
 
+
       <footer>
+        
+
+
+        
+        
         
       </footer>
     </article>
 
-    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
   </section>
 
       </div>
@@ -154,16 +204,23 @@ n – wyszukiwanie następnych takich samych wyrazów w pliku</pre></div>
       <footer class="footer">
   <section class="container">
     
-     © 2019
+    
+      
+        © 2020
+      
+       Adam Kubica (xcdr) 
+    
     
        · 
-      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      Napędzane przez <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
     
     
   </section>
 </footer>
 
     </main>
+
+    
 
     
 
